@@ -17,14 +17,13 @@ public class Pokerito {
         System.out.println(" • Ready? Type anything if you are.");
         scan.nextLine();
 
+        String yourCard = randomCard();
+        String computerCard = randomCard();
 
-        /*Task 3: Present the user with a card
-         println 'Here's your card:'
-         <show card>
-         <new line>
-         println 'Here's the computer's card:'
-         <show computer's card>
-        */
+        System.out.println("Here's your card: ");
+        System.out.println(yourCard);
+        System.out.println("\nHere's the computer's card: ");
+        System.out.println(computerCard);
 
         int yourMatches = 0;
         int computerMatches =0;
