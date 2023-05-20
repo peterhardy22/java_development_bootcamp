@@ -28,19 +28,14 @@ public class Pokerito {
         int yourMatches = 0;
         int computerMatches =0;
 
-        /** Task 4 - Draw five cards
-         * 
-         * • print:  Now, the dealer will draw five cards. Press enter to continue.
-         * • The dealer will draw a card every time the user presses enter.
-         * • Before you draw a card, print the order it was drawn in:
-         *      Card 1 
-         *      <2 new lines>
-         *      <print card>
-         *      Card 2
-         *      <2 new lines>
-         *      <print card>
-         *      ...
-         */
+        System.out.println("Now, the dealer will draw five cards. Press enter to continue.");
+        for (int i = 1; i <= 5; i++) {
+                scan.nextLine();
+                String draw = randomCard();
+                System.out.println("Card " + i);
+                System.out.println(draw);
+        }
+
 
         /** Task 5 - Get the winner
          * 
