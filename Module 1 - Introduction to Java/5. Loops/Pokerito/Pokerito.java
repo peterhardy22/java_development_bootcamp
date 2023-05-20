@@ -4,7 +4,6 @@ public class Pokerito {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        // Task 2: Explain the rules       
         System.out.println("Let's play Pokerito. Type anything when you're ready.");
         scan.nextLine();
         System.out.println("It's like Poker, but a lot simpler.\n");
@@ -26,7 +25,7 @@ public class Pokerito {
         System.out.println(computerCard);
 
         int yourMatches = 0;
-        int computerMatches =0;
+        int computerMatches = 0;
 
         System.out.println("Now, the dealer will draw five cards. Press enter to continue.");
         for (int i = 1; i <= 5; i++) {
@@ -34,20 +33,24 @@ public class Pokerito {
                 String draw = randomCard();
                 System.out.println("Card " + i);
                 System.out.println(draw);
+
+                if (yourCard.equals(draw)) {
+                        yourMatches++;
+                }
+                if (computerCard.equals(draw)) {
+                        computerMatches++;
+                }
+                System.out.println("Your number of matches: " + yourMatches);
+                System.out.println("Computer number of matches: " + computerMatches);
         }
 
-
-        /** Task 5 - Get the winner
-         * 
-         * • Count your number of matches.
-         * • Count the computer's number of matches.
-         * • print: Your number of matches: <yourMatches>
-         * • print: Computer number of matches:  <computerMatches>
-         * 
-         * • If you have more matches, print: You win!. 
-         * • If the computer has more matches, print: The computer wins! 
-         * • If the matches are equal, print: everyone wins!.
-         */
+        if (yourMatches > computerMatches) {
+                System.out.println("You win!");
+        } else if (computerMatches > yourMatches) {
+                System.out.println("The computer wins!");
+        } else {
+                System.out.println("Everyone wins!");
+        }
 
          scan.close();
     }
