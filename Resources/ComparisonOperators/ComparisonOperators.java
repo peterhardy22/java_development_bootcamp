@@ -19,7 +19,6 @@ public class ComparisonOperators {
         System.err.println("Me: Hi Java, am I old enough to retire?");
         System.out.println("Java: " + (age >= retirementAge) + "\n");
 
-
     }
     
 }
