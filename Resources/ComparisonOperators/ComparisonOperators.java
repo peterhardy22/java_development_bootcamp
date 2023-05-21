@@ -24,6 +24,10 @@ public class ComparisonOperators {
         System.out.println("Me: Are the two words the same?");
         System.out.println("Java: " + (word.equals(secondWord)) + "\n");
 
+        String thirdWord = "hello";
+        String fourthWord = "goodbye";
+        System.out.println("Me: Are the two words the different?");
+        System.out.println("Java: " + !thirdWord.equals(fourthWord) + "\n");
     }
     
 }
