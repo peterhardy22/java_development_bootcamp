@@ -12,6 +12,15 @@ public class LogicalOperators {
         } else {
             System.out.println("You cannot legally drive.");
         }  
+
+        boolean hasGoodPerformance = true;
+        boolean isLongTermEmployee = false;
+
+        if (hasGoodPerformance || isLongTermEmployee) {
+            System.out.println("The user is eligible for a promotion.");
+        } else {
+            System.out.println("The user is not eligible for a promotion.");
+        }
     } 
 }
 
