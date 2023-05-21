@@ -19,6 +19,11 @@ public class ComparisonOperators {
         System.err.println("Me: Hi Java, am I old enough to retire?");
         System.out.println("Java: " + (age >= retirementAge) + "\n");
 
+        String word = "hello";
+        String secondWord = "hello";
+        System.out.println("Me: Are the two words the same?");
+        System.out.println("Java: " + (word.equals(secondWord)) + "\n");
+
     }
     
 }
