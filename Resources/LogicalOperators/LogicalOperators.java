@@ -3,7 +3,7 @@ package Resources.LogicalOperators;
 public class LogicalOperators {
 
     public static void main(String[] args) {
-    
+        // and = &&
         boolean hasDrivingLiscense = true;
         boolean hasInsurance = true;
 
@@ -13,6 +13,7 @@ public class LogicalOperators {
             System.out.println("You cannot legally drive.");
         }  
 
+        // or = ||
         boolean hasGoodPerformance = true;
         boolean isLongTermEmployee = false;
 
@@ -21,6 +22,18 @@ public class LogicalOperators {
         } else {
             System.out.println("The user is not eligible for a promotion.");
         }
+
+        // not = !
+        String option = "credit";
+        
+        boolean notCashOrCredit = !(option.equals("cash") || option.equals("credit"));
+        
+        if (notCashOrCredit) {
+            System.out.println("Please choose another payment option.");
+        } else {
+            System.out.println("Sold. Pleasure doing business with you!");
+        }
+        
     } 
 }
 
