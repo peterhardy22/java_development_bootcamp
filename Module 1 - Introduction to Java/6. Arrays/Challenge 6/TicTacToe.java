@@ -79,7 +79,7 @@ public class TicTacToe {
       System.out.print(" - pick a row and column number: ");
       int row = scan.nextInt();
       int element = scan.nextInt();
-      while (board[row][element] == 'X' || board[row][element] == 'O') {
+      while (board[row][element] != '_') {
         System.out.print("Spot taken, try again: ");
         row = scan.nextInt();
         element = scan.nextInt();
