@@ -33,20 +33,12 @@ public class TicTacToe {
         System.out.println("X WINS!");
         break;
       } else if (count == -3) {
-        System.out.println(" WINS!");
+        System.out.println("O WINS!");
         break;
+      } else if (i == 8) {
+        System.out.println("IT'S A TIE!!");
       }
     }
-    /*
-     * Task 6 - Call the function.
-     * if return value == 3 {
-     * print: X wins and break the loop
-     * } else if return value == -3 {
-     * print: O wins and break the loop
-     * }
-     * 
-     * }
-     */
 
     scan.close();
   }
@@ -113,7 +105,7 @@ public class TicTacToe {
           count--;
         }
       }
-      if (count == 3 || count == -3) {
+      if (Math.abs(count) == 3) {
         return count;
       } else {
         count = 0;
@@ -133,7 +125,7 @@ public class TicTacToe {
           count--;
         }
       }
-      if (count == 3 || count == -3) {
+      if (Math.abs(count) == 3) {
         return count;
       } else {
         count = 0;
