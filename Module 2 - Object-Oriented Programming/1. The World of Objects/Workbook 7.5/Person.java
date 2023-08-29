@@ -25,6 +25,10 @@ public class Person {
         return number == 1;
     }
 
+    public void chooseSeat() {
+        seatNumber = (int) (Math.random() * 11 + 1);
+    }
+
     public String getName() {
         return this.name;
     }
