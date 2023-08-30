@@ -20,11 +20,11 @@ public class Car {
         this.price = source.price;
         this.year = source.year;
         this.color = source.color;
-        this.parts = Arrays.copyOf(source.parts, source.parts.length);;
+        this.parts = Arrays.copyOf(source.parts, source.parts.length);
     }
 
     public String[] getParts() {
-        return this.parts;
+        return Arrays.copyOf(this.parts, this.parts.length);
     }
 
     public void setParts(String[] parts) {
