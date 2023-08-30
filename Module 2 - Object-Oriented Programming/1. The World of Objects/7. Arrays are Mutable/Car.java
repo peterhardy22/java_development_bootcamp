@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Car {
     public String make;
     public double price;
@@ -10,7 +12,7 @@ public class Car {
         this.price = price;
         this.year = year;
         this.color = color;
-        this.parts = parts;
+        this.parts = Arrays.copyOf(parts, parts.length);
     }
 
     public Car(Car source) {
