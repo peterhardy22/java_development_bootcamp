@@ -7,13 +7,9 @@ public class Main {
         
         person.chooseSeat();
 
-        System.out.println("Name: " + person.getName() + "\n" +
-        "Nationality: " + person.getNationality() + "\n" + 
-        "Date of Birth: " + person.getDateOfBirth() + "\n" + 
-        "Seat Number: " + person.getSeatNumber() + "\n");
-
         if (person.applyPassport()) {
             System.out.println("Congratulations " + person.getName() + ". Your passport was approved!");
+            person.setPassport();
         } else {
             System.out.println("We are sorry " + person.getName() + ". We cannot process your application.");
         }
