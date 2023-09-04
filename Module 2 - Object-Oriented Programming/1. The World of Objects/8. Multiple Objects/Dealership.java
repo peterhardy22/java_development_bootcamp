@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Dealership {
 
     private Car[] cars;
@@ -10,5 +8,5 @@ public class Dealership {
             this.cars[i] = new Car(cars[i]);
         }
     }
-
+    
 }
