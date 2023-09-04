@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     
     public static void main(String[] args) {
@@ -12,7 +14,7 @@ public class Main {
 
         Dealership dealership = new Dealership(cars);
 
-        cars[3] = new Car("Hyundai", 7000, 2019, "orange", new String[] {"tires", "filter"});
-    
+        cars[3].setColor("Blue");
+        System.out.println(Arrays.toString(cars));
     }
 }
