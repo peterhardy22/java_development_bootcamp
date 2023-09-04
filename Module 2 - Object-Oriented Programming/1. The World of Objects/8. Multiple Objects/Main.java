@@ -22,9 +22,8 @@ public class Main {
         System.out.println("Which car are you interested in? (0 – 4).\n");
         int index = scan.nextInt();
 
-        // sell car here... 
+        dealership.sell(index);
 
         scan.close();
-
     }
 }
