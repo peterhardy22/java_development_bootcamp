@@ -2,16 +2,17 @@ public class Airline {
     
     Person[] people;
 
-    public Airline(Person[] people) {
+    public Airline() {
         this.people = new Person[11];
-        for (int i = 0; i < this.people.length; i++) {
-            this.people[i] = new Person(people[i]);
-        }
     }
 
-
     public Person getPerson(int index) {
-        Person copy = new Person(this.people[index]);
-        return copy;
+        Person person = new Person(this.people[index]);
+        return new Person(person);
+    }
+
+    public void setPerson(Person person) {
+        int index = person.getSeatNumber() - 1;
+        this.people[index] = new Person(person);
     }
 }
