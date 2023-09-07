@@ -26,10 +26,11 @@ public class Main {
                 people[i].setPassport();
                 airline.createReservation(people[i]);
             } else {
-                System.out.println("Sorry " + people[i].getName() + ". Your passport: " + Arrays.toString(people[i].getPassport()) + " is not valid.\n");
+                System.out.println("Sorry " + people[i].getName() + ". Your passport: " + Arrays.toString(people[i].getPassport()) + " is not valid.\n");  
             }
         }
 
      }
+    
   
 }
