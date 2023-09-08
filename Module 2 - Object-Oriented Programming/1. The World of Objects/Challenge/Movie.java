@@ -40,4 +40,11 @@ public class Movie {
         this.rating = rating;
     }
 
+
+    public String toString() {
+        return this.rating + "\t" + 
+            this.format + "\t\t" + 
+            this.name + "";
+    }
+
 }
