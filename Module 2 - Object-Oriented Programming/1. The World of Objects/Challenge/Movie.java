@@ -8,7 +8,8 @@ public class Movie {
         this.name = name;
         this.format = format;
         this.rating = rating;
-    }
+    }    
+
 
     public Movie(Movie source) {
         this.name = source.name;
@@ -17,34 +18,32 @@ public class Movie {
     }
 
     public String getName() {
-        return this.name;
+        return name;
     }
 
     public void setName(String name) {
         this.name = name;
     }
-
+    
     public String getFormat() {
-        return this.format;
+        return format;
+    }
+
+    public double getRating() {
+        return rating;
     }
 
     public void setFormat(String format) {
         this.format = format;
     }
 
-    public double getRating() {
-        return this.rating;
-    }
-
     public void setRating(double rating) {
         this.rating = rating;
     }
 
-
     public String toString() {
-        return this.rating + "\t" + 
-            this.format + "\t\t" + 
-            this.name + "";
+        return this.rating + "\t" + this.format + "\t\t" + this.name + "";
     }
+    
 
 }
