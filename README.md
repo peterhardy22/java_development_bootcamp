@@ -5,4 +5,8 @@ Starting on Classes this week!!
   - Constructors
   - Getters
   - Setters
-  - Copy Constructor (in progress...)
+  - Copy Constructor
+  - Multiple Objects
+  - Deep Copying
+  - Challenge Complete
+  - Extra Practice (in progress...)
