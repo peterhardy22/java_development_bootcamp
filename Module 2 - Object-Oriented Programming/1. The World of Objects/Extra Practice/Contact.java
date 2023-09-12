@@ -10,4 +10,11 @@ public class Contact {
         this.birthDate = birthDate;             
         this.age = age;
     }
+
+    public Contact(Contact source) {
+        this.name = source.name;
+        this.phoneNumber = source.phoneNumber;
+        this.birthDate = source.birthDate;             
+        this.age = source.age;
+    }
 }
