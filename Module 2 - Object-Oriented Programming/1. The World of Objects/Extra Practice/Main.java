@@ -9,11 +9,11 @@ public class Main {
         Contact copyContact1 = new Contact(contact1);
         Contact copyContact2 = new Contact(contact3);
 
-        System.out.println(contact1);
-        System.out.println(contact3);
-        System.out.println(copyContact1);
-        System.out.println(copyContact2);
-
+        System.out.println(contact1.getBirthDate());
+        System.out.println(contact1.getAge());
+        contact1.setBirthDate("1989-01-01"); 
+        System.out.println(contact1.getBirthDate());
+        System.out.println(contact1.getAge());
     }    
 
 }

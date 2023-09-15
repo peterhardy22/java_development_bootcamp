@@ -22,10 +22,45 @@ public class Contact {
     }
 
 
+    public String getName() {
+        return this.name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPhoneNumber() {
+        return this.phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public String getBirthDate() {
+        return this.birthDate;
+    }
+
+    public void setBirthDate(String birthDate) {
+        this.birthDate = birthDate;
+        int age = toAge(birthDate);
+        setAge(age);
+    }
+
+    public int getAge() {
+        return this.age;
+    }
+
+    private void setAge(int age) {
+        this.age = age;
+    }
+
+
     public int toAge(String birthDate) {
         LocalDate dateOfBirth = LocalDate.parse(birthDate);
         LocalDate today = LocalDate.now();
-        Period period = Period.between(today, dateOfBirth);
+        Period period = Period.between(dateOfBirth, today);
         return period.getYears();    
     }
     
