@@ -1,8 +1,8 @@
 public class Main {
 
     public static void main(String[] args) {
-        Contact contact1 = new Contact("Alice", "123-456-7890", "1990-01-01");
-        Contact contact2 = new Contact("Bob", "234-567-8901", "1992-02-02");
+        Contact contact1 = new Contact("Cassie", "123-456-7890", "1989-12-16");
+        Contact contact2 = new Contact("Bob", "234-567-8901", "1989-02-22");
     
         Contact[] contacts = {contact1, contact2};
         ContactManager contactManager = new ContactManager(contacts);
