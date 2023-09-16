@@ -10,6 +10,10 @@ public class ContactManager {
     
     public Contact getContact(int index) {
         return new Contact(contacts[index]);
-     }
+    }
+
+    public void setContact(Contact contact, int index) {
+        this.contacts[index] = new Contact(contact);
+    }
      
 }
