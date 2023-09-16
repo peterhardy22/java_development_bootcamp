@@ -19,6 +19,6 @@ public class Main {
         retrievedContact = contactManager.getContact(0);
         System.out.println(retrievedContact.getName());
     }
-     
-
+    
+    
 }
