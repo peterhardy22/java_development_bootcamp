@@ -6,7 +6,11 @@ public class ContactManager {
         for (int i = 0; i < this.contacts.length; i++) {
             this.contacts[i] = new Contact(contacts[i]);
         }
-
     }
     
+    public Contact getContact(int index) {
+        Contact copy = new Contact(this.contacts[index]);
+        return copy;
+     }
+     
 }
