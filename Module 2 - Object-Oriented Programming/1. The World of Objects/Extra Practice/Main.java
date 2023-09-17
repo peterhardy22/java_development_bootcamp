@@ -5,9 +5,19 @@ public class Main {
     static Scanner scan = new Scanner(System.in);
     public static void main(String[] args) {
         
+        ContactManager contactManager = new ContactManager(contactData());
+        
         scan.close();
     }
     
+    public static void displayContacts(ContactManager contactManager) {
+        for (int i = 0; i < 8; i++) {
+            Contact contact = contactManager.getContact(i);
+            System.out.println(contact);
+            System.out.println("\n");
+        }
+    }    
+
     public static Contact[] contactData() {
         return new Contact[] {
                 new Contact("John Doe", "555-123-4567", "1985-01-01"),
