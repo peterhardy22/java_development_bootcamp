@@ -1,5 +1,8 @@
+import java.util.Scanner;
+
 public class Main {
 
+    static Scanner scan = new Scanner(System.in);
     public static void main(String[] args) {
         Contact contact1 = new Contact("Cassie", "123-456-7890", "1989-12-16");
         Contact contact2 = new Contact("Bob", "234-567-8901", "1989-02-22");
@@ -18,6 +21,8 @@ public class Main {
         // Verify that the contact was updated
         retrievedContact = contactManager.getContact(0);
         System.out.println(retrievedContact.getName());
+
+        scan.close();
     }
     
     
