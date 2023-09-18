@@ -9,4 +9,4 @@ Starting on Classes this week!!
   - Multiple Objects
   - Deep Copying
   - Challenge Complete
-  - Extra Practice (more in progress...)
+  - Extra Practice (Halfway thru the last part)
