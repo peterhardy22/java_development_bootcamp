@@ -8,5 +8,6 @@ Starting on Classes this week!!
   - Copy Constructor
   - Multiple Objects
   - Deep Copying
-  - Challenge Complete
-  - Extra Practice (Halfway thru the last part)
+  - Challenge
+  - Extra Practice
+  - Immutable Objects (in progress)
