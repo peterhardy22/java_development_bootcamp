@@ -10,4 +10,4 @@ Starting on Classes this week!!
   - Deep Copying
   - Challenge
   - Extra Practice
-  - Immutable Objects (soon come)
+  - Immutable Objects
