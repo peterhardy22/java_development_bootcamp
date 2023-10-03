@@ -11,3 +11,4 @@ Starting on Classes this week!!
   - Challenge
   - Extra Practice
   - Immutable Objects
+  - List Collections
